@@ -1,5 +1,5 @@
 const fs = require("fs")
-const data = require("../model/data.json")
+const data = require("../data.json")
 const {idade, date} = require("../model/util")
 
 exports.listar = function (req, res) {

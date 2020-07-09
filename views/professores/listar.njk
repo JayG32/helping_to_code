@@ -10,8 +10,8 @@
             <thead>
                 <tr>
                     <th>professor</th>
-                    <th>Cursos</th>
                     <th>Email</th>
+                    <th>Cursos</th>
                     <th>Ação</th>
                 </tr>
             </thead>
@@ -23,10 +23,13 @@
                             <span style="background-image:url({{professor.avatar_url}})" ></span>
                             {{professor.nome}}
                         </td>
+
+                        <td>
+                            <span>{{professor.email}}</span>
+                        </td>
                         
                         <td>
                             <span>{{professor.servicos}}</span>
-                            <span>{{professor.email}}</span>
                         </td>
 
                         <td><a href="/professores/{{professor.id}}">Visualizar</a></td>
