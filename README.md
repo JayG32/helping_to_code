@@ -12,10 +12,10 @@
 ---
 
 # 📋 Sobre
-Projeto **Helping to code** é uma página ficticia de ensino onde é possível efetuar o cadastro de alunos e professores , desenvolvida como sugestão de desafio do módulo 4 dentro do curso  **Bootcamp Launchbase** com o intuito de colocarmos em prática todos os conceitos aplicados ao back-end e funcionalidades e tecnologias novas.
+Projeto **Helping to code** é uma página ficticia de ensino onde é possível efetuar o cadastro de alunos e professores , desenvolvida como sugestão de desafio do módulo 4 dentro do curso  **Bootcamp Launchbase** com o intuito de colocarmos em prática todos os conceitos aplicados ao back-end, funcionalidades e tecnologias novas.
 
 O projeto possui uma página de cadastro de professores e alunos e uma página onde estão distribuidas as informações de todos os professores e alunos cadastrados. 
-E as funcionalidade de edição e exclusão. Por enquanto ainda não foi aplicado a obtenção dos dados com banco de dados, foi utilizado um arquivo **data.json** para a persisntência dos dados.
+E as funcionalidade de edição e exclusão. Por enquanto ainda não foi aplicado a obtenção dos dados com banco de dados, foi utilizado um arquivo **data.json** para a persistência dos dados.
 
 
 ##  ❗ Tópicos Importantes
@@ -57,6 +57,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
     yarn start
 
 ```
+---
+## 📑 Licença
+Esse projeto está sob a licença MIT. 
 
 ---
-termos da licença MIT  |  Desenvolvido por 👩‍💻 Janiele Nogueira
+
+👩‍💻 Desenvolvido por 🙎‍♀️Janiele Nogueira
