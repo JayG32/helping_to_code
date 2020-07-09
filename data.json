@@ -4,7 +4,7 @@
       "id": 1,
       "avatar_url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
       "nome": "Marcelo Silva",
-      "email": "marcelo@email.com",
+      "email": "marcelo@email.com.br",
       "nascimento": 616204800000,
       "sexo": "M",
       "curso": "Introdução a Programação"
@@ -45,7 +45,7 @@
       "email": "diego@gmail.com",
       "nascimento": -141177600000,
       "sexo": "M",
-      "servicos": "Desenvolvimento Web,  Inglês"
+      "servicos": "Desenvolvimento Web,  Inglês, Espanhol"
     },
     {
       "id": 2,
@@ -64,15 +64,6 @@
       "nascimento": 805507200000,
       "sexo": "F",
       "servicos": "Gerência de Projetos, Segurança da Informação"
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1558377235-802c801ab268?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "nome": "Lisandra Martins",
-      "email": "lisM@email.com",
-      "nascimento": 868924800000,
-      "sexo": "F",
-      "servicos": "Introdução a Programação, Inglês"
     }
   ]
 }
