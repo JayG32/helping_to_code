@@ -1,0 +1,59 @@
+    <div class="item">
+        <div>Avatar URL</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="http://" value="{{professor.avatar_url}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>professor</div>
+        <div>
+            <input type="text" name="nome" placeholder="Nome do professor" value="{{professor.nome}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Email</div>
+        <div>
+            <input type="email" name="email" placeholder="exemplo@email.com" value="{{professor.email}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Data de nascimento</div>
+        <div>
+            <input type="date" name="nascimento" placeholder="Data de nascimento" value="{{professor.nascimento}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Sexo</div>
+        <div>
+            <span>
+                <input type="radio" name="sexo" value="M" 
+                    {% if professor.sexo == 'M' %}
+                        checked
+                    {% endif %}
+                > 
+                Masculino 
+            </span>
+
+            <span>
+                <input type="radio" name="sexo" value="F" 
+                    {% if professor.sexo == 'F' %}
+                        checked
+                    {% endif %}
+                > 
+                Feminino 
+            </span> 
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Cursos</div>
+        <div>
+            <input type="text" name="servicos" placeholder="Separe as disciplinas por vírgula" value="{{professor.servicos}}">
+        </div>
+    </div>
+
+    <button type="submit">Salvar</button>

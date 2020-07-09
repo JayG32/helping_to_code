@@ -1,0 +1,364 @@
+@import "https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Source+Sans+Pro&display=swap" ;
+@import "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";
+:root{
+    --primary-color:#7159c1;
+    --secondary-color:#f7df1e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    /* background-image: url("https://source.unsplash.com/collection/202/1400x1300"); */
+    /* opacity: 0.5; */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://source.unsplash.com/collection/202/1400x1300");
+    
+    /* background-repeat: no-repeat; */
+    /* background-color: var(--primary-color); */
+    /* color: white; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    background-color: rgb(50, 15, 51);
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links{
+    font-size: 22px;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.links a.active{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a:hover{
+    color: var(--primary-color);
+}
+
+.links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+}
+.links a:hover::after{
+    width: 100%;
+    transition: width 700ms  ease-in-out ; /*cubic-bezier(0.9, 0.19, 0.58, 1) */
+}
+
+/* card */
+.card{
+    background-color: #fff;
+    width: 800px;
+    min-height: 400px;
+
+    /* espaçamento ao centro */
+   margin: 45px auto;
+
+   /* grid dividido ao meio */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   /* sombra */
+   box-shadow: 20px 20px 15px -2px rgba(0, 0, 0, 0.8);
+   border-radius: 30px;
+
+   /* animação */
+   animation: up 200ms ease-out;
+    
+}
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.avatar{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+/* detalhes */
+
+.detalhes{
+    /* padding: 32px; */
+    /* border: 1px solid red; */
+    padding: 32px;
+}
+
+.detalhes .item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.detalhes .item:last-child{
+    border: none;
+}
+
+.detalhes h3,
+.detalhes .item div:nth-child(1){
+    color: #777;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.7px;
+    font-weight: normal;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.detalhes .item div:nth-child(2){
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.detalhes h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color  );
+}
+
+.detalhes .item span{
+    padding: 8px 16px;
+    background-color:  var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* formulario */
+
+input, select{
+    width: 100%;
+    outline: none;
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"],
+a.button {
+    padding: 8px 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+
+    font-size: 16px;
+}
+
+a.button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+#form-deletar button [type="submit"] {
+    margin-top: 8px;
+    background-color: lightcoral;
+}
+
+/* Index instrutores */
+
+.tabela-container {
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+    
+}
+
+.tabela-container table{
+    border-spacing: 0;
+}
+
+.tabela-container thead tr th{
+    text-align: left;
+}
+
+td, th{
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+th{
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+
+
+tbody tr td:first-child span{
+    width: 48px;
+    height: 48px;
+    background-position: center ;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+}
+
+
+tbody tr td:last-child a, 
+.tabela-container > a{
+    /* border: 1px solid red; */
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.tabela-container > a{
+    margin-bottom: 32px ;
+    display: inline-block;
+}
+
+.tabela-container thead tr th:last-child,
+td:last-child   {
+    text-align: center;
+}
+
+
+.tabela-container tbody td:nth-child(2) span{
+    padding: 8px ;
+    background-color:  var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+} 
+
+.card_home{
+    width: 800px;
+    min-height: 400px;
+
+    /* espaçamento ao centro */
+    margin: 45px auto;
+
+    /* grid dividido ao meio */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* sombra */
+    /* box-shadow: 20px 20px 25px -7px  rgba(0, 0, 0, 0.8); */
+    /* border-radius: 30px; */
+
+    /* animação */
+    /* animation: up 200ms ease-out; */
+    
+}
+
+.professores_home{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("https://source.unsplash.com/collection/1361815/300x300");
+    /* opacity: 0.5; */
+    box-shadow: 20px 20px 15px -2px rgba(0, 0, 0, 0.8);
+   /* border-radius: 30px; */
+
+   /* animação */
+   animation: up 200ms ease-out;
+}
+.alunos_home{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("https://source.unsplash.com/collection/1285462/300x300");
+    box-shadow: 20px 20px 15px -2px rgba(0, 0, 0, 0.8);
+   /* border-radius: 30px; */
+
+   /* animação */
+   animation: up 200ms ease-out;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    width: 500px;
+    height: 80px;
+    margin: auto;
+}
+
+h2{
+    font-family: 'Permanent Marker', cursive;
+    /* border: 1px solid red; */
+    position: relative;
+    text-align: center;
+    /* margin-top: 140px; */
+    /* display:inline; */
+    width: 170px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: rgb(50, 15, 51);
+    border-radius: 30px;
+    
+}
+
+.card_home a{
+    text-decoration: none;
+    color: white;
+}

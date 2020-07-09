@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        {% block head %}
+            <title>Helping To Code  </title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body  >
+        <!-- -->
+        <header>
+            {% block header %}
+            <div class="links" >
+                <a href="/">Home</a>
+                <a href="/professores">Professores</a>
+                <a href="/alunos">Alunos</a>
+            </div>  
+            {% endblock %}
+        </header>
+
+        <!-- Bloco de código que será substituido de forma dinâmica -->
+        {% block content %} 
+        {% endblock %}
+
+        <script src="/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="card tabela-container">
+
+        <a href="/alunos/cadastro">Novo</a>
+        
+        <table width="100%">
+
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Email</th>
+                    <th>Data de Nascimento</th>
+                    <th>Curso</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for aluno in alunos %}
+                    <tr>
+                        <td>
+                            <span style="background-image:url({{aluno.avatar_url}})" ></span>
+                            {{aluno.nome}}
+                        </td>
+                        
+                        <td>{{aluno.email}}</td>
+                        <td>{{aluno.nascimento}}</td>
+                        <td>{{aluno.curso}}</td>
+                            
+                        <td><a href="/alunos/{{aluno.id}}">Visualizar</a></td>
+                    </tr>
+                {% endfor %}
+                
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}

@@ -1,0 +1,95 @@
+    <div class="item">
+        <div>Avatar URL</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="http://" value="{{aluno.avatar_url}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Aluno</div>
+        <div>
+            <input type="text" name="nome" placeholder="Nome do aluno" value="{{aluno.nome}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Email</div>
+        <div>
+            <input type="email" name="email" placeholder="exemplo@email.com" value="{{aluno.email}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Data de nascimento</div>
+        <div>
+            <input type="date" name="nascimento" placeholder="Data de nascimento" value="{{aluno.nascimento}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Sexo</div>
+        <div>
+            <span>
+                <input type="radio" name="sexo" value="M" 
+                    {% if aluno.sexo == 'M' %}
+                        checked
+                    {% endif %}
+                > 
+                Masculino 
+            </span>
+
+            <span>
+                <input type="radio" name="sexo" value="F" 
+                    {% if aluno.sexo == 'F' %}
+                        checked
+                    {% endif %}
+                > 
+                Feminino 
+            </span> 
+
+        </div>
+    </div>
+
+     <div class="item">
+        <div>Curso</div>
+        <div>
+            <select name="sangue" id="">
+                <option value="01" 
+                {% if aluno.sangue == "01" %}selected{%endif%}
+                >Introdução a Programação</option>
+
+                <option value="02"
+                {% if aluno.sangue == "02" %}selected{%endif%}
+                >Desenvolvimento Web</option>
+
+                <option value="03"
+                {% if aluno.sangue == "03" %}selected{%endif%}
+                >Desenvolvimento Mobile</option>
+
+                 <option value="04"
+                 {% if aluno.sangue == "04" %}selected{%endif%}
+                 >Ciência de Dados</option>
+
+                <option value="05"
+                {% if aluno.sangue == "05" %}selected{%endif%}
+                >Segurança da Informação</option>
+
+                <option value="06"
+                {% if aluno.sangue == "06" %}selected{%endif%}
+                >Redes de Computadores</option>
+
+                <option value="07"
+                {% if aluno.sangue == "07" %}selected{%endif%}
+                >Gerência de Projetos</option>
+
+                <option value="08"
+                {% if aluno.sangue == "08" %}selected{%endif%}
+                >Inglês</option>
+
+
+            </select>
+        </div>
+    </div>
+
+    
+    <button type="submit">Salvar</button>

@@ -1,0 +1,14 @@
+{
+  "alunos": [],
+  "professores": [
+    {
+      "id": 1,
+      "avatar_url": "htttp://www.marcos.com",
+      "nome": "Marcos",
+      "email": "marcos@gmail.com",
+      "nascimento": 871776000000,
+      "sexo": "M",
+      "servicos": "Desenvolvimento Web"
+    }
+  ]
+}
