@@ -3,7 +3,7 @@ const routes = express.Router()
 const professores = require("./controller/professores")
 const alunos = require("./controller/alunos")
 
-routes.get("/", function (req, res) {
+routes.get("/home", function (req, res) {
     return res.render("../views/index")
 })
 

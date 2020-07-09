@@ -45,7 +45,7 @@ exports.post = function (req, res) {
     let {avatar_url,nome, email, nascimento, sexo, servicos } = req.body 
     
     nascimento = Date.parse(req.body.nascimento)
-    const created_at = Date.now()
+    // const created_at = Date.now()
     const id = Number(data.professores.length+1 ) 
 
     data.professores.push({

@@ -1,5 +1,42 @@
 {
-  "alunos": [],
+  "alunos": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "nome": "Marcelo Silva",
+      "email": "marcelo@email.com",
+      "nascimento": 616204800000,
+      "sexo": "M",
+      "curso": "Introdução a Programação"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1526781480235-d79b4866aa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "nome": "Manuela Andreias Aquino",
+      "email": "manu@email.com.br",
+      "nascimento": 797644800000,
+      "sexo": "F",
+      "curso": "Ciência de Dados"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80",
+      "nome": "Andreias Filipino ",
+      "email": "andreias@email.com",
+      "nascimento": 736300800000,
+      "sexo": "M",
+      "curso": "Desenvolvimento Web"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1519070994522-88c6b756330e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=601&q=80",
+      "nome": "Juliana Nogueira",
+      "email": "juliana@email.com.br",
+      "nascimento": 695174400000,
+      "sexo": "F",
+      "curso": "Segurança da Informação"
+    }
+  ],
   "professores": [
     {
       "id": 1,
@@ -8,7 +45,34 @@
       "email": "diego@gmail.com",
       "nascimento": -141177600000,
       "sexo": "M",
-      "servicos": "Desenvolvimento Web. Inglês"
+      "servicos": "Desenvolvimento Web,  Inglês"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=804&q=80",
+      "nome": "Marcos Silvano",
+      "email": "marcos@email.com",
+      "nascimento": 630547200000,
+      "sexo": "M",
+      "servicos": "Ciência de Dados, Matemática"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1563132337-f159f484226c?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "nome": "Maria Gusmão Silva",
+      "email": "marianaG@gmail.com",
+      "nascimento": 805507200000,
+      "sexo": "F",
+      "servicos": "Gerência de Projetos, Segurança da Informação"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1558377235-802c801ab268?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "nome": "Lisandra Martins",
+      "email": "lisM@email.com",
+      "nascimento": 868924800000,
+      "sexo": "F",
+      "servicos": "Introdução a Programação, Inglês"
     }
   ]
 }

@@ -1,6 +1,6 @@
 const fs = require("fs")
 const data = require("../data.json")
-const { date } = require("../model/util")
+const {idade, date } = require("../model/util")
 
 exports.listar = function (req, res) {
     return res.render("alunos/listar", {alunos: data.alunos})

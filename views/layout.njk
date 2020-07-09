@@ -14,7 +14,7 @@
         <header>
             {% block header %}
             <div class="links" >
-                <a href="/">Home</a>
+                <a href="/home">Home</a>
                 <a href="/professores">Professores</a>
                 <a href="/alunos">Alunos</a>
             </div>  
@@ -25,7 +25,19 @@
         {% block content %} 
         {% endblock %}
 
-        <script src="/script.js"></script>
+        <script >
+
+            const atualPagina = location.pathname
+
+// console.log(atualPagina)
+const menuItems = document.querySelectorAll("header .links a")
+
+for (item of menuItems){
+    if(atualPagina.includes(item.getAttribute("href"))) {
+        item.classList.add("active")
+    }
+}
+        </script>
 
     </body>
 </html>

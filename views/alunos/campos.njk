@@ -53,39 +53,46 @@
      <div class="item">
         <div>Curso</div>
         <div>
-            <select name="sangue" id="">
-                <option value="01" 
-                {% if aluno.sangue == "01" %}selected{%endif%}
+            <select name="curso" id="">
+                <option value="Introdução a Programação" 
+                {% if aluno.curso == "Introdução a Programação" %}selected{%endif%}
                 >Introdução a Programação</option>
 
-                <option value="02"
-                {% if aluno.sangue == "02" %}selected{%endif%}
+                <option value="Desenvolvimento Web"
+                {% if aluno.curso == "Desenvolvimento Web" %}selected{%endif%}
                 >Desenvolvimento Web</option>
 
-                <option value="03"
-                {% if aluno.sangue == "03" %}selected{%endif%}
+                <option value="Desenvolvimento Mobile"
+                {% if aluno.curso == "Desenvolvimento Mobile" %}selected{%endif%}
                 >Desenvolvimento Mobile</option>
 
-                 <option value="04"
-                 {% if aluno.sangue == "04" %}selected{%endif%}
+                 <option value="Ciência de Dados"
+                 {% if aluno.curso == "Ciência de Dados" %}selected{%endif%}
                  >Ciência de Dados</option>
 
-                <option value="05"
-                {% if aluno.sangue == "05" %}selected{%endif%}
+                <option value="Segurança da Informação<"
+                {% if aluno.curso == "Segurança da Informação<" %}selected{%endif%}
                 >Segurança da Informação</option>
 
-                <option value="06"
-                {% if aluno.sangue == "06" %}selected{%endif%}
+                <option value="Redes de Computadores"
+                {% if aluno.curso == "Redes de Computadores" %}selected{%endif%}
                 >Redes de Computadores</option>
 
-                <option value="07"
-                {% if aluno.sangue == "07" %}selected{%endif%}
+                <option value="Gerência de Projetos"
+                {% if aluno.curso == "Gerência de Projetos" %}selected{%endif%}
                 >Gerência de Projetos</option>
 
-                <option value="08"
-                {% if aluno.sangue == "08" %}selected{%endif%}
+                <option value="Inglês"
+                {% if aluno.curso == "Inglês" %}selected{%endif%}
                 >Inglês</option>
 
+                <option value="Matemática"
+                {% if aluno.curso == "Matemática" %}selected{%endif%}
+                >Matemática</option>
+
+                <option value="Python"
+                {% if aluno.curso == "Python" %}selected{%endif%}
+                >Python</option>
 
             </select>
         </div>

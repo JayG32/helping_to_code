@@ -93,7 +93,6 @@ header{
 }
 
 /* detalhes */
-
 .detalhes{
     padding: 32px;
 }
@@ -112,7 +111,6 @@ header{
     color: #777;
     font-size: 14px;
     line-height: 24px;
-
     letter-spacing: 0.7px;
     font-weight: normal;
     font-family: 'Permanent Marker', cursive;
@@ -184,7 +182,7 @@ a.button{
     background-color: lightcoral;
 }
 
-/* Index instrutores */
+/* Index professores */
 .tabela-container {
     display: block;
     padding: 40px;
@@ -222,6 +220,8 @@ tbody tr td:first-child {
     align-items: center;
 }
 
+
+
 tbody tr td:first-child span{
     width: 48px;
     height: 48px;
@@ -235,7 +235,6 @@ tbody tr td:first-child span{
 
 tbody tr td:last-child a, 
 .tabela-container > a{
-    /* border: 1px solid red; */
     background-color: var(--primary-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -258,6 +257,7 @@ td:last-child   {
 
 .tabela-container tbody td:nth-child(3) span{
     padding: 8px ;
+    /* background-color:  var(--secondary-color); */
     border-radius: 16px;
     color: #777;
     font-weight: bold;
@@ -275,6 +275,7 @@ td:last-child   {
 }
 
 .professores_home{
+    border: 1px solid red;
     width: 300px;
     height: 300px;
     margin: auto;
