@@ -48,7 +48,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
     $ git clone https://github.com/JayG32/helping_to_code
 
      #Entre na pasta do projeto
-    cd foodfy
+    cd helping_to_code
 
     #Instale as dependencias
     yarn install
